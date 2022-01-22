@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=PT+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+button {
+    font-size: 1.5em;
+    border: none;
+    padding: 1.3em;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.iss {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    color: #333;
+}
+
+.long-section {
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-bottom: 2rem;
+}
+
+.long-section button {
+    color: white;
+    background: rgb(42, 110, 247);
+}
+
+.lati-section {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 2rem;
+}
+
+.lati-section button {
+    color: white;
+    background: rgb(234, 156, 22);
+}

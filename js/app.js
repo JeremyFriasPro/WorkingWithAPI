@@ -12,17 +12,12 @@ async function getInfo() {
     // formatting the data received to JSON
     const data = await response.json();
     // logging result to console
-    console.log(`The Latitude Of The ISS is ${data.latitude}`);
-    console.log(`The Longitude Of The ISS is ${data.longitude}`);
-
-    if(data.longitude > 150) {
-        console.log("Longitude Passed 150");
-    } else if(data.longitude < 150) {
-        console.log("Longitude Did Not Pass 150");
-    }
 
     let longitudeDisplay = document.getElementById('lon');
     longitudeDisplay.textContent = data.longitude;
+
+    let latitudeDisplay = document.getElementById('lat');
+    latitudeDisplay.textContent = data.latitude;
 }
 
 getInfo();
