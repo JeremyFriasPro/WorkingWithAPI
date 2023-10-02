@@ -20,7 +20,5 @@ async function getInfo() {
     latitudeDisplay.textContent = data.latitude;
 }
 
-getInfo();
-
 // calling the function every 1000 milliseconds (1 second)
 setInterval(getInfo, 1000);
